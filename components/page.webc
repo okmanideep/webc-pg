@@ -1,0 +1,2 @@
+<h1>WebC Playgrounds</h1>
+<counter-list @counters="counters"></counter-list>

@@ -1,0 +1,22 @@
+<button type="button">Add</button>
+<output @html="`${this.value || 1}`"></output>
+
+<style>
+button {
+  padding: 12px;
+}
+</style>
+
+<script>
+window.customElements.define("my-counter", class extends HTMLElement {
+  connectedCallback() {
+    let btn = this.querySelector(":scope button")
+    let output = this.querySelector(":scope output")
+
+    btn.addEventListener("click", () => {
+      let value = parseInt(output.innerText)
+      output.innerText = ++value
+    })
+  }
+}) 
+</script>

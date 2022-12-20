@@ -1,0 +1,8 @@
+<script webc:type="render">
+function() {
+  console.log({what: this})
+  return this.counters.map((item) => {
+    `<my-counter @value="${item}"></my-counter>`
+  }).join("\n")
+}
+</script>

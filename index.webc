@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebC Playgrounds</title>
+    <style webc:keep @raw="styles"></style>
+  </head>
+  <body>
+    <template webc:nokeep @raw="content"></template>
+    <script webc:keep @raw="js"></script>
+  </body>
+</html>
